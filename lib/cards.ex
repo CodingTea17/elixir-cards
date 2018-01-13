@@ -6,7 +6,13 @@ defmodule Cards do
 
     def create_deck do
       # Elixir convention is to use double quotes
-      ["Ace", "Two", "Three"] 
+      values = ["Ace", "Two", "Three", "Four", "Five"]
+      suits = ["Spades", "Clubs", "Hearts", "Diamonds"]
+
+      # List comprehension
+      for suit <- suits, value <- values do
+        "#{value} of #{suit}"
+      end
     end
 
     # Arity = 1
