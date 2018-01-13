@@ -1,4 +1,8 @@
 defmodule Cards do
+  @moduledoc """
+    A collection of methods for creating, handiling, and storing decks of cards
+  """
+
   # def hello do
   #   # Elixir can be implicit or explicit (e.g. "return" vs no "return")
   #   "Hocus Pocus!"
