@@ -13,4 +13,9 @@ defmodule Cards do
     def shuffle(deck) do
       Enum.shuffle(deck)
     end
+
+    # ? bool 
+    def contains?(deck, card) do
+      Enum.member?(deck, card)
+    end
 end
