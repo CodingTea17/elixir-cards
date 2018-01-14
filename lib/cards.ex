@@ -21,8 +21,17 @@ defmodule Cards do
       "#{value} of #{suit}"
     end
   end
+
+  @doc """
+    Returns a boolean. Determines whether a card is in a given deck,
+
+  ## Examples
   
-  # ? bool 
+    iex> deck = Cards.create_deck
+    iex> Cards.contains?(deck, "Ace of Spades")
+    true
+
+  """
   def contains?(deck, card) do
     Enum.member?(deck, card)
   end
